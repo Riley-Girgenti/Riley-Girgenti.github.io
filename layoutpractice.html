@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Practice</title>
+    <style>
+        body {
+            margin: auto;
+            background-color: #E2D4B7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header, nav, article, footer {
+            background-color: #A1A499;
+            border: 5px solid #9C9583;
+            margin: 5px;
+            padding: 5px;
+            text-align: justify;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 0px;
+            padding: 0px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                width: 80%;
+            }
+
+            #content {
+                display: flex;
+            }
+
+            nav {
+                position: static;
+            }
+            nav ul {
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Yo</h1>
+    </header>
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <div id="blogs">
+            <article>
+                <h2>Blog Post</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </article>
+            <article>
+                <h2>Blog Post</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </article>
+            <article>
+                <h2>Blog Post</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </article>
+        </div>
+    </div>
+    <footer>
+        Made by R. Girgenti
+    </footer>
+</body>
+
+</html>
